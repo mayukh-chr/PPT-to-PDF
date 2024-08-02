@@ -6,9 +6,9 @@ Python 3.11.0 or higher\
 Microsoft Powerpoint
 # Usage:
 Clone the repository:\
-```git clone git@github.com:mayukh-chr/PPT-to-PDF.git```
+```git clone git@github.com:mayukh-chr/PPT-to-PDF.git```\
 Go to project:\
-```cd PPT-to-PDF```
+```cd PPT-to-PDF```\
 Paste the required directory in line 38, replacing "sample-path";\
 and run the program using:\
-```python ppt-to-pdf.py```
+```python ppt-to-pdf.py```\
