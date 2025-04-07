@@ -17,6 +17,11 @@ def convert_to_pdf(input_folder):
             input_path = os.path.join(input_folder, file)
             output_path = os.path.join(input_folder, f"{Path(file).stem}.pdf")
             
+            # Check if PDF already exists
+            if os.path.exists(output_path):
+                print(f"PDF already exists for {file}. Skipping.")
+                continue
+                
             try:
                 if file.lower().endswith(('.ppt', '.pptx')):
                     presentation = powerpoint.Presentations.Open(input_path)
@@ -48,5 +53,5 @@ def convert_to_pdf(input_folder):
             except:
                 print("Error quitting Word application")
 
-folder_path = r"D:\School\Manipal\Resources\Sem 5\FML\Na Slides"
+folder_path = r"YOUR_PATH"
 convert_to_pdf(folder_path)
